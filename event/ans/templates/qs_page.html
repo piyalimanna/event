@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event</title>
+</head>
+<body>
+<h1>Question{{number}}</h1>
+<form action="" method="POST" class="form">
+{% csrf_token %}
+{{form.as_p}}
+
+<input type="submit" value="Submit" class="save btn btn-default">
+
+</form>
+score={{score}}
+</body>
+</html>

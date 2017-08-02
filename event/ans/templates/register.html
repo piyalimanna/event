@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>create a login</title>
+</head>
+<body>
+<h1>ENTER DETAILS</h1>
+<form action="" method="POST" class="form">
+{% csrf_token %}
+{% if state %}
+{{state}}
+{% endif %}
+{{form.as_p}}
+
+<input type="submit" value="Submit" class="save btn btn-default">
+
+</form>
+</body>
+</html>
