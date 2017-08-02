@@ -18,7 +18,7 @@ from django.contrib.auth.decorators import login_required
 
 def login(request):
 	if request.user.is_authenticated():
-		return HttpResponseRedirect('/main/')
+		return HttpResponseRedirect('/qs/1')
 	if request.POST:
 		form=LoginForm(request.POST)
 		if form.is_valid():	
@@ -49,7 +49,7 @@ def login(request):
 
 def register(request):
 	if request.user.is_authenticated():
-		return HttpResponseRedirect('/main/')
+		return HttpResponseRedirect('/qs/1')
 	if request.method=='POST': 
 			data=request.POST
 			u=User()
